@@ -9,16 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-@include('layouts.preloader')
-<script>
-    window.onload = function () {
-        document.body.classList.add('loaded_hiding');
-        window.setTimeout(function () {
-            document.body.classList.add('loaded');
-            document.body.classList.remove('loaded_hiding');
-        }, 500);
-    }
-</script>
+    @include('layouts.preloader')
     <header>
         @include('layouts.header')
     </header>
@@ -30,5 +21,7 @@
     <footer>
         @include('layouts.footer')
     </footer>
+
+    <script src="{{asset('js/script.js')}}"></script>
 </body>
 </html>
