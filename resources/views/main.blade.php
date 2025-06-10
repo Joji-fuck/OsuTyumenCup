@@ -6,7 +6,6 @@
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{asset('images/danze_eat.gif')}}') no-repeat;
             background-size: cover;
         }
-
     </style>
     <section class="registration">
         <a class="registration-btn" href="#">

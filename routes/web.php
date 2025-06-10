@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', ['App\Http\Controllers\MainController', 'index']) -> name('home');
+Route::get('/players', ['App\Http\Controllers\PlayerController', 'index']) -> name('player');

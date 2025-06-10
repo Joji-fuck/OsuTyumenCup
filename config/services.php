@@ -30,5 +30,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'osu' => [
+        'client_id' => env('OSU_CLIENT_ID'),
+        'client_secret' => env('OSU_CLIENT_SECRET'),
+    ],
 
 ];
