@@ -9,13 +9,17 @@
     </style>
 
     <h1>Игроки</h1>
-    @foreach($stats as $playerStat)
-        <div style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
-            <h2>{{ $playerStat['username'] }}</h2>
-            <p>Мировой ранк: #{{ number_format($playerStat['global_rank']) }}</p>
-            <p>Ранк в России: #{{ number_format($playerStat['country_rank']) }}</p>
-        </div>
-    @endforeach
-{{--    <p>Мировой ранк: {{ number_format($stats['global_rank']) }}</p>--}}
-{{--    <p>Ранк в России: {{ number_format($stats['country_rank']) }}</p>--}}
+    <section class="players">
+        @foreach($stats as $playerStat)
+            <div class="player-card">
+                <img src="https://a.ppy.sh/{{$playerStat['player_data']->player_id}}">
+                <div class="player-info">
+                    <h2>{{ $playerStat['username'] }}</h2>
+                    <p>World: #{{ number_format($playerStat['global_rank']) }}</p>
+                    <p>RU: #{{ number_format($playerStat['country_rank']) }}</p>
+                </div>
+
+            </div>
+        @endforeach
+    </section>
 @endsection
