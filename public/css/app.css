@@ -175,7 +175,7 @@ main{
 
 .players{
     width: 90%;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     display: flex;
     gap: 30px;
     justify-content: start;
@@ -202,4 +202,28 @@ main{
 .player-card img{
     width: 210px;
     height: 210px;
+}
+
+/*CRM*/
+.CRM{
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+    text-align: center;
+}
+.CRM-left, .CRM-right{
+    width: 50%;
+    height: 700px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 42px;
+    color: #FFFFFF;
 }

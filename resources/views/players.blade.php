@@ -8,10 +8,9 @@
         }
     </style>
 
-    <h1>Игроки</h1>
     <section class="players">
         @foreach($stats as $playerStat)
-            <div class="player-card">
+            <a href="https://osu.ppy.sh/users/{{$playerStat['player_data']->player_id}}" class="player-card">
                 <img src="https://a.ppy.sh/{{$playerStat['player_data']->player_id}}">
                 <div class="player-info">
                     <h2>{{ $playerStat['username'] }}</h2>
@@ -19,7 +18,7 @@
                     <p>RU: #{{ number_format($playerStat['country_rank']) }}</p>
                 </div>
 
-            </div>
+            </a>
         @endforeach
     </section>
 @endsection

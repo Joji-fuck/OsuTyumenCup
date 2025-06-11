@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
+    <style>
+        body{
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{asset('images/danze_eat.gif')}}') no-repeat;
+            background-size: cover;
+        }
+    </style>
     @include('layouts.preloader')
     <header>
         @include('layouts.header')
