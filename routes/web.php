@@ -23,6 +23,5 @@ Route::get('/mappool', ['App\Http\Controllers\MappoolController', 'index']) -> n
 
 Route::prefix('/smallboywantschoko')->group(function(){
     Route::resource('/', 'App\Http\Controllers\CRM\CRMController');
-    Route::get('/new-player', ['App\Http\Controllers\CRM\AddPlayerController', 'index'])-> name('new-player');
-    Route::get('/all-players', ['App\Http\Controllers\CRM\ListPlayersController', 'index'])-> name('all-players');
+    Route::resource('/players', 'App\Http\Controllers\CRM\PlayersController');
 });

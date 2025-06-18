@@ -1,2 +1,2 @@
-<p>Osu! Tyumen Cup {{date('Y')}}. © Все права защищены</p>
+<p>Osu!Tyumen Cup {{date('Y')}}. © GOIDA</p>
 
