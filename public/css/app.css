@@ -176,7 +176,7 @@ main{
 }
 
 .players{
-    width: 90%;
+    width: 95%;
     margin: 30px auto 0 auto;
     display: flex;
     gap: 30px;
@@ -184,8 +184,7 @@ main{
     flex-wrap: wrap;
 }
 .player-card{
-
-    width: 350px;
+    width: 320px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -268,9 +267,13 @@ main{
 }
 
 /*map*/
+.mappool-h1{
+    text-align: center;
+    margin: 20px 0;
+}
 .details{
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .summary{
     height: 50px;
@@ -278,15 +281,43 @@ main{
     font-size: 25px;
     border-radius: 10px;
 }
+/*.summary-white{*/
+/*    color: black;*/
+/*    background: #ffffff;*/
+/*}*/
 .summary-blue{
     background: #669AE2;
 }
+.summary-red{
+    background: #ED654E;
+}
+.summary-green{
+    background: #4BD98A;
+}
+.summary-yellow{
+    background: #E8D662;
+}
 .map-card{
+    color: white;
     width: 95%;
     margin: 10px auto;
-    background: rgba(102, 154, 226, 0.55);
     display: flex;
     align-items: center;
+}
+/*.map-card-white {*/
+/*    background: rgba(255, 255, 255, 0.55);*/
+/*}*/
+.map-card-blue{
+    background: rgba(102, 154, 226, 0.55);
+}
+.map-card-red {
+    background: rgba(237, 101, 78, 0.55);
+}
+.map-card-green{
+    background: rgba(75, 217, 138, 0.55);
+}
+.map-card-yellow {
+    background: rgba(232, 214, 98, 0.55);
 }
 .map-mode{
     display: flex;
@@ -299,19 +330,16 @@ main{
 .map-img{
     padding: 20px 0 20px 20px;
     width: 70%;
-    background: #9ca3af;
 }
 .map-stats{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     width: 20%;
+    height: 90px;
 }
-.map-stats-left{
+.map-stats-left,.map-stats-right{
     display: flex;
     flex-direction: column;
-}
-.map-stats-right{
-    display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
